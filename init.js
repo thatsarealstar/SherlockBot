@@ -10,7 +10,7 @@ let commands = [
   "https://raw.githubusercontent.com/thatsarealstar/SherlockBot/refs/heads/main/commands/test.js"
 ];
 
-function Initilization(a, msg) {
+function Initilization(a) {
   let preferredname = localStorage.getItem("prefname");
   let preferredcolor = localStorage.getItem("prefcolor");
   
@@ -47,7 +47,6 @@ function Initilization(a, msg) {
   if (cmdcount = 1) {
   console.log("[INFO] Successfully loaded all commands!")
 }
-let msgid = { msg.id }
 }
 
 Initilization();
