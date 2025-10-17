@@ -10,7 +10,7 @@ let commands = [
   "https://raw.githubusercontent.com/thatsarealstar/SherlockBot/refs/heads/main/commands/test.js"
 ];
 
-function Initilization(a) {
+function Initilization(a, msg) {
   let preferredname = localStorage.getItem("prefname");
   let preferredcolor = localStorage.getItem("prefcolor");
   
@@ -47,9 +47,7 @@ function Initilization(a) {
   if (cmdcount = 1) {
   console.log("[INFO] Successfully loaded all commands!")
 }
-  MPP.client.on("a", msg => {
-    let msgid = msg.id
-  })
+let msgid = { msg.id }
 }
 
 Initilization();
