@@ -47,6 +47,9 @@ function Initilization(a) {
   if (cmdcount = 1) {
   console.log("[INFO] Successfully loaded all commands!")
 }
+  MPP.client.on("a", msg => {
+    let msgid = msg.id
+  })
 }
 
 Initilization();
